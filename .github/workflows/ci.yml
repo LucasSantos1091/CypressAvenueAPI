@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Run Commands with a Secret
         run: |
-          echo "This is a secret value: ${{secrets.API_KEY}}"
+            echo '${{secrets.API_KEY}}' > cypress.env.json
 
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
