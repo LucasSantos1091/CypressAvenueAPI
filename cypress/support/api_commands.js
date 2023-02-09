@@ -1,11 +1,11 @@
-//const apikey = Cypress.env('API_Key')
+const apikey = Cypress.env('${apikey}')
 
 
 
 Cypress.Commands.add('api_Italy', project => {
     cy.request({
         method: 'GET',
-        url: '/weather?q=Italy,it&appid=' + ${apikey},
+        url: '/weather?q=Italy,it&appid=' + apikey,
         body: {},
         headers: {},
     })
@@ -14,7 +14,7 @@ Cypress.Commands.add('api_Italy', project => {
 Cypress.Commands.add('api_London', project => {
     cy.request({
         method: 'GET',
-        url: '/weather?q=London,uk&appid=' + ${apikey},
+        url: '/weather?q=London,uk&appid=' + apikey,
         body: {},
         headers: {},
     })
