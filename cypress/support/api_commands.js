@@ -1,4 +1,4 @@
-const apikey = Cypress.env(API_Key)
+const apikey = Cypress.env('API_Key')
 
 Cypress.Commands.add('api_Italy', project => {
     cy.request({
