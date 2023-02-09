@@ -1,4 +1,4 @@
-const apikey = Cypress.env('${apikey}')
+const apikey = Cypress.env('APIKey')
 
 
 
