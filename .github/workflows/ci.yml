@@ -8,7 +8,9 @@ jobs:
     steps:
       - name: Run Commands with a Secret
         env:
-            apikey: ${{ secrets.API_KEY }}
+            apikey: ${{secrets.API_KEY }}
+        run: |
+          echo "This is a secret value: $API_KEY"
       - name: Checkout
         uses: actions/checkout@v3
       # Install NPM dependencies, cache them correctly
