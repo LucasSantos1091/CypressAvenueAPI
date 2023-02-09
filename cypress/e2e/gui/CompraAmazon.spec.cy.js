@@ -2,7 +2,7 @@
 
 const loc = require('../../support/locators').LOCATORS;
 beforeEach(function() {
-    cy.visit('https://www.amazon.com.br/')
+    cy.visit(loc.Web)
 })
 
 describe('Cenário01', function() {

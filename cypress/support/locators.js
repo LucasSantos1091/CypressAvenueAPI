@@ -12,6 +12,7 @@ export const LOCATORS = {
     Nome: '#ap_customer_name',
     Email: '#ap_email',
     Password: '#ap_password',
-    ConfirmPassword: '#ap_password_check'
+    ConfirmPassword: '#ap_password_check',
+    Web: 'https://amazon.com.br'
 
 }

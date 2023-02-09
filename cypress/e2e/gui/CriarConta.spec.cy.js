@@ -1,13 +1,14 @@
 /// <reference types="Cypress" />
+import { faker } from '@faker-js/faker';
 
 //import loc from "../../support/locators.js";
 const loc = require('../../support/locators').LOCATORS;
 beforeEach(function() {
-    cy.visit('https://www.amazon.com.br/')
+    cy.visit(loc.Web)
 })
 
 describe('Cenário03', function() {
-    const faker = require('faker')
+    // const faker = require('faker')
     let username = faker.name.findName()
     let email = faker.internet.email()
     let password = faker.internet.password()
