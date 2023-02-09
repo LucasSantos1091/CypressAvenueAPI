@@ -6,7 +6,7 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-     - name: Run Commands with a Secret
+      - name: Run Commands with a Secret
         run: |
             echo ${{secrets.API_KEY}} > cypress.env.json
       - name: Checkout
