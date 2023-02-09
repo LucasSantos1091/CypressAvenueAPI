@@ -3,6 +3,7 @@
 const loc = require('../../support/locators').LOCATORS;
 beforeEach(function() {
     cy.visit(loc.Web)
+    cy.wait(1000)
 })
 
 describe('Cenário01', function() {
